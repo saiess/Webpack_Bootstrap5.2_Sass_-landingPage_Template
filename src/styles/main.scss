@@ -1,0 +1,11 @@
+@import './variables';
+$custom-colors: (
+    "scarlet": #900
+    );
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import '~bootstrap/scss/bootstrap';
