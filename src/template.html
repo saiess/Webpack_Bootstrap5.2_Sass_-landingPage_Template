@@ -7,9 +7,613 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <div class="container bg-scarlet">
-        <h1 class="text-primary">wooooooooow</h1>
-        <img id="nfx" alt="" />
+    <div class=" text-center text-md-start">
+      <div class="col-12">
+        
+        <nav class="container navbar navbar-expand-lg bg-white">
+          <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="./template.html" rel="preload">
+              <img id="logo" alt="logo"/>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <div class="d-flex px-3" role="search">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      id="navbarDropdown1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Landings
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Docs</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-primary font-bold" type="submit">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <section class="container col-xxl-12 px-4 my-5">
+          <div class="row align-items-center justify-content-center g-5 py-5">
+            <div class="col-lg-5 px-0 d-flex flex-column align-items-center">
+              <h1 class="display-5 fw-bold lh-1 fs text-center">
+                A virtual office for remote teams
+              </h1>
+              <p class="lead my-5 text-gray fw-normal text-center">
+                Re-discover the flow of working together in‑person. See, talk
+                to, and collaborate with your team in one click. Now, every
+                teams can have a virtual office.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-primary fw-bold btn-lg px-4 py-3 me-md-2"
+                >
+                  Get Started for Free
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-secondary fw-bold btn-lg px-4 py-3"
+                >
+                  See Pricing
+                </button>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-7">
+              <img
+                id="hero"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                width="700"
+                height="500"
+                rel="preload"
+              />
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md col-6 d-flex justify-content-center mx-0 mx-md-2 my-4">
+              <img id="slack" alt="btn"/>
+            </div>
+            <div class="col-md col-6 d-flex justify-content-center my-4">
+              <img id="netflix" alt="btn"/>
+            </div>
+            <div class="col-md col-6 d-flex justify-content-center my-4">
+              <img id="google" alt="btn"/>
+            </div>
+            <div class="col-md col-6 d-flex justify-content-center my-4">
+              <img id="airbnb" alt="btn"/>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center my-4">
+              <img id="uber" alt="btn"/>
+            </div>
+          </div>
+
+          <div class="row">
+            <img id="dots" class="img-responsive my-4" alt="btn" width="100%"
+                height="100%"/>
+          </div>
+        </section>
+
+        <section class="container col-xxl-12 px-4 my-5 flex-column text-center">
+          <div class="row py-5 justify-content-between">
+            <div class="col-lg-4 px-0">
+              <p class="text-gray">COLLABORATION</p>
+              <h2 class="display-1 fw-bold lh-1 fs">Quick Collaboration</h2>
+              <p class="lead my-5 text-gray fw-normal">
+                See which work apps your team is working in, and join them with
+                a click. Shared cursors = better than screen-sharing.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary fw-bold btn-lg px-5 py-3 me-md-2"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 my-5">
+              <img
+                id="illustration-1"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="row py-5">
+            <div class="col-4">
+              <img id="computer" alt="Computer" loading="lazy" class="border p-2 rounded" />
+              <h3 class="my-4">Bring your ideas to life</h3>
+              <p class="text-gray fs-5">
+                From pixel-perfect icons and scalable vector graphics, to full
+                user flows and interactive prototype.
+              </p>
+            </div>
+            <div class="col-4">
+              <img id="home" alt="home" loading="lazy" class="border p-2 rounded" />
+              <h3 class="my-4">Build designs from home</h3>
+              <p class="text-gray fs-5">
+                From pixel-perfect icons and scalable vector graphics, to full
+                user flows and interactive prototype.
+              </p>
+            </div>
+            <div class="col-4">
+              <img id="message" alt="message" loading="lazy" class="border p-2 rounded" />
+              <h3 class="my-4">Discussion intens live</h3>
+              <p class="text-gray fs-5">
+                From pixel-perfect icons and scalable vector graphics, to full
+                user flows and interactive prototype.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="container col-xxl-12 px-4 my-5 flex-column">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-6">
+
+                <div class="row py-5 h-100">
+                  <div class="col-12">
+                    <div
+                      class="bg-secondary h-100 d-flex justify-content-center align-items-center rounded-4"
+                    >
+                      <img
+                      alt="btn"
+                        id="illustration-2"
+                        class="d-block mx-lg-auto img-fluid"
+                        loading="lazy"
+                        width="582"
+                        height="585"
+                      />
+                    </div>
+                  </div>
+                    <div class="col-12 py-5">
+                    <p class="text-gray fw-bold spacing">UNIVERSAL ROOMS</p>
+                    <h3 class="my-4">Spontaneous Conversations</h3>
+                    <p class="text-gray fs-5">
+                      Time zones got you working late? See who is also in work mode
+                      and get quick feedback on your work.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+
+                <div class="row py-5 h-100">
+                  <div class="col-12">
+                    <div
+                      class="bg-lightGray h-100 d-flex justify-content-center align-items-center rounded-4"
+                    >
+                      <img
+                      alt="btn"
+                        id="illustration-3"
+                        class="d-block mx-lg-auto img-fluid my-5"
+                        loading="lazy"
+                        width="554"
+                        height="683"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 py-5">
+                    <p class="text-gray fw-bold spacing">ASSISTANCING</p>
+                    <h3 class="my-4">Co-working with Multi-Plattform</h3>
+                    <p class="text-gray fs-5">
+                      Hang out in a minimal voice/video call to feel connected — like
+                      you're working at the same table.
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="container-lg container-fluid col-xxl-12 px-0 px-lg-4 my-5 flex-column">
+          <div class="row bg-darkGreen divRounded d-flex p-5">
+              <div
+                class="col-12 col-md-5 d-flex position-relative align-items-center justify-content-center img-container"
+              >
+                <div class="shape">
+                  <img id="image-1" alt="btn" class="imgSlide img-fluid" loading="lazy" />
+                </div>
+              </div>
+              <div class="col-12 col-md-7 d-flex flex-column justify-content-evenly">
+                <div class="d-md-flex flex-column justify-content-between align-items-center my-5 my-md-0">
+                    <h3 class="text-white">Mathijn Agter</h3>
+                    <span class="text-white">Project Manager</span>
+                </div>
+                <h4 class="text-white fs-4 my-5 my-md-0">
+                  “EhyaWare is fast. Files are always up to date. It’s easy to
+                  share designs across the organization, so collaboration is
+                  easy.”
+                </h4>
+
+                  <div class="text-white d-flex justify-content-center my-5 my-md-0">
+                    <button class="buttondots border-0 text-darkGreen" type="button">.</button>
+                    <button class="buttondots border-0 mx-2 text-darkGreen" type="button">.</button>
+                    <button class="buttondots border-0 text-darkGreen" type="button">.</button>
+                    <button class="buttondots border-0 mx-2 text-darkGreen" type="button">.</button>
+                    <button class="buttondots border-0 text-darkGreen" type="button">.</button>
+                  </div>
+
+                <div style="margin-bottom: -5.5rem">
+                  <button type="button" class="btnSlide bg-white border-0 rounded-3 shadow">
+                    <img id="chevronleft" alt="btn">
+                </button>
+                  <button
+                  type="button"
+                    class="btnSlide bg-white border-0 rounded-3 mx-3 shadow">
+                <img id="chevron" alt="btn">
+              </button>
+                </div>
+              </div>
+          </div>
+        </section>
+        
+        <section class="container col-xxl-12 px-4 py-5 d-flex justify-content-between gridContainer" >
+          <div class="col-6 col-md-4 makeGrid">
+            <div class="w-75 d-flex justify-content-end">
+              <div class="w-50 d-flex justify-content-between">
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem">
+                  <img id="shopify" alt="btn" class="w-75">
+                </div>
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem; margin-right: -1rem;">
+                  <img id="slackSmall" alt="btn" class="w-75">
+                </div>
+              </div>
+            </div>
+
+            <div class="w-75 d-flex justify-content-center">
+              <div class="w-50 d-flex justify-content-between">
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem">
+                  <img id="trello" alt="btn" class="w-75">
+                </div>
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem; margin-right:-2rem">
+                  <img id="digitalOcean" alt="btn" class="w-75">
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-center">
+              <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:2.5rem; height:2.5rem">
+                <img id="analytics" alt="btn" class="w-75">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column col-6 col-md-4 py-5 moveUp">
+            <p class="text-center">INTEGRATION</p>
+            <h3 class="text-center">
+              Integrations with 40+ Most using software
+            </h3>
+            <a href="#" class="text-primary text-center mx-2">Browse all Software <img id="arrow" alt="btn" class="mx-1"></a>
+          </div>
+          <div class="col-6 col-md-4 makeGrid">
+            <div class="w-100 d-flex justify-content-center">
+              <div class="w-50 d-flex justify-content-between">
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem; margin-top:1rem">
+                  <img id="dropbox" alt="btn" class="w-75">
+                </div>
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:2.5rem; height:2.5rem; margin-top:3rem">
+                  <img id="jira" alt="btn" class="w-75">
+                </div>
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:2.5rem; height:2.5rem">
+                <img id="drive" alt="btn" class="w-75">
+              </div>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-center">
+              <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem; margin-right:-3rem; margin-top:2rem">
+                <img id="github" alt="btn" class="w-75">
+              </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-center">
+              <div class="w-50 d-flex justify-content-between">
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem">
+                  <img id="asana" alt="btn" class="w-75">
+                </div>
+                <div class="bg-white gridchild rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center shadow" style="width:3rem; height:3rem; margin-right: -1rem">
+                  <img id="notion" alt="btn" class="w-75">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-xxl-12 bg-secondary pt-4 px-4">
+          <div class="container px-4 my-5 d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex col-md-4 col-8 flex-column align-items-center">
+                <p class="text-center">PRICING PLAN</p>
+                <h3 class="text-center fw-bold fs-3">Find a Plan that works for you</h3>
+                <p class="text-center fs-6 text-gray">Get the EhyaWare plan that fits your team at a special introductory price.
+                  It’s the all-in-one online training system they’ll love.
+                </p>
+                <div class="w-100 d-flex flex-column">
+                  <span class="text-warning">Save 10%</span>
+                  <div class="w-100 d-flex justify-content-between align-items-center y-2" style="height:6rem">
+                    <p class="text-center m-0">Annual Plan</p>
+                    <img id="toggle" alt="btn">
+                    <p class="text-center m-0">Monthly Plan</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex col-10 flex-column justify-content-between" style="margin-bottom: -3.5rem;">
+                <div class="bg-white d-flex flex-column flex-md-row justify-content-between align-items-center p-4 shadow rounded">
+                    <div>
+                      <h4>Starter</h4>
+                      <p>for up to 2 editors and 3 projects</p>
+                    </div>
+                    <div>
+                      <h4>Free</h4>
+                      <a href="#" class="text-primary mb-4">Want more features?</a>
+                    </div>
+                    <div>
+                      <button type="button" class="bg-primary btn fw-bold px-4 py-3 text-white">
+                        Choose Plan
+                      </button>
+                    </div>
+                </div>
+                <div class="bg-white d-flex flex-column flex-md-row justify-content-between align-items-center p-4 my-4 shadow rounded">
+                    <div>
+                      <h4>Professional</h4>
+                      <p>for up to 5 editors and 10 projects</p>
+                    </div>
+                    <div>
+                      <h4>$60</h4>
+                      <p>or $10 month-to-month</p>
+                    </div>
+                    <div>
+                      <button type="button" class="bg-primary btn fw-bold px-4 py-3 text-white">
+                        Choose Plan
+                      </button>
+                    </div>
+                </div>
+    
+                <div class="bg-white d-flex flex-column flex-md-row justify-content-between align-items-center p-4 shadow rounded">
+                    <div>
+                      <h4>Organization</h4>
+                      <p>for up to 10 editors and 20+ projects</p>
+                    </div>
+                    <div>
+                      <h4>$100</h4>
+                      <p>or $15 month-to-month</p>
+                    </div>
+                    <div>
+                      <button  type="button" class="bg-primary btn fw-bold px-4 py-3 text-white">
+                        Choose Plan
+                      </button>
+                    </div>
+                </div>
+    
+                <div class="bg-white d-flex flex-column flex-md-row justify-content-between align-items-center p-4 mt-4 shadow rounded">
+                    <div>
+                      <h4>Entreprise</h4>
+                      <p>for 1000+ people company</p>
+                    </div>
+                    <div>
+                      <button type="button" class="bg-primary btn fw-bold px-4 py-3 text-white">
+                        Choose Plan
+                      </button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="container col-xxl-12 px-4 my-5 d-flex flex-column align-items-center">
+          <hr class="w-100 mb-5 bg-secondary" style="height: 1px; margin-top: 8rem;">
+
+          <div class="col-12 col-md-4 mt-5">
+            <p class="text-center fs-md-6 fs-4">DOWNLOAD</p>
+            <h3 class="text-center fw-bold fs-3">Get started with EhyaWare today</h3>
+            <p class="text-center fs-md-6 fs-4 text-gray">New normal working without doubt about how far you distancing</p>
+          </div>
+
+          <div class="d-flex flex-md-row col-12 flex-column my-5">
+            <div class="col-md-4 my-3 my-md-0 col-12 bg-teal d-flex flex-column justify-content-center align-items-center p-4">
+              <img id="mac" alt="btn">
+              <div class="my-5">
+                <h4 class="text-center">for MacOs</h4>
+                <p class="text-center">For MacOs High Sierra and upper</p>
+              </div>
+              <button type="button" class="bg-white btn fw-bold px-4 py-1 text-dark">
+                Download for Mac
+              </button>
+            </div>
+
+            <div class="col-md-4 col-12 my-3 my-md-0 bg-lightGreen d-flex flex-column justify-content-center align-items-center p-4">
+              <img id="windows" alt="btn">
+              <div class="my-5">
+                <h4 class="text-center">for Windows</h4>
+                <p class="text-center">For Windows 10 Home and other</p>
+              </div>
+              <button type="button" class="btn border-1 border-teal text-teal fw-bold px-4 py-1">
+                Download for Windows
+              </button>
+            </div>
+
+            <div class="col-md-4 col-12 my-3 my-md-0 bg-lightGreen d-flex flex-column justify-content-center align-items-center p-4">
+              <img id="linux" alt="btn">
+              <div class="my-5">
+                <h4 class="text-center">for Linux</h4>
+                <p class="text-center">For Linux Fedora and Upper</p>
+              </div>
+              <button type="button" class="btn border-1 border-teal text-teal fw-bold px-4 py-1">
+                Download for Linux
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex flex-md-row flex-column justify-content-between align-items-center my-5">
+            <div class="col-md-6 col-12">
+              <p class="fw-bold fs-md-6 fs-3">Subscribe to our newsletter</p>
+              <p class="fs-md-6 text-gray">
+                A monthly digest of the lastest Sketch news, articles, and resources.
+              </p>
+            </div>
+
+            <div class="col-md-6 col-12 d-flex justify-content-center">
+                <form class="w-100 d-flex flex-md-row flex-column my-3 align-items-center">
+                  <input type="text" class="py-3 form-control w-75 my-3" placeholder="your email here">
+                  <button type="button" class="btn bg-darkGreen text-white text-center fs-6 w-25 fw-bold my-3 py-3">
+                    subscribe
+                  </button>
+              </form>
+            </div>
+        </section>
+
+        <footer class="container py-5 border-top">
+          <div class="row justify-content-center">
+              <div class="col-md-2 col-12 mx-0 px-0 offset-1 order-last order-md-first">
+                <img id="logoFooter" alt="btn"/>
+                <p class="text-gray my-3">Build a modern and creative website with crealand</p>
+                <div class="w-100 d-flex justify-content-center justify-content-md-start">
+                  <div class="bg-secondary rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center" style="width:2rem; height:2rem">
+                    <img id="googleSmall" alt="btn" class="w-50">
+                  </div>
+                  <div class="bg-secondary rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center mx-1" style="width:2rem; height:2rem">
+                    <img id="twitter" alt="btn" class="w-50">
+                  </div>
+                  <div class="bg-secondary rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center" style="width:2rem; height:2rem">
+                    <img id="instagram" alt="btn" class="w-50">
+                  </div>
+                  <div class="bg-secondary rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center mx-1" style="width:2rem; height:2rem">
+                    <img id="linkedin" alt="btn" class="w-50">
+                  </div>
+                </div>
+              </div>
+              <div class="row col-md-10 col-12 px-0 order-first">
+                <div class="col-md-3 col-6 px-0 text-start d-flex flex-column align-items-center mt-3 mt-md-0">
+                  <h5 class="fw-bold w-50">Products</h5>
+                  <ul class="nav flex-column w-50">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Landingpage</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentation</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Referral Program</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  </ul>
+                </div>
+  
+                <div class="col-md-3 col-6 px-0 text-start d-flex flex-column align-items-center mt-3 mt-md-0">
+                  <h5 class="fw-bold w-50">Services</h5>
+                  <ul class="nav flex-column w-50">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentation</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Design</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Themes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Illustrations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">UI Kit</a></li>
+                  </ul>
+                </div>
+   
+                <div class="col-md-3 col-6 px-0 text-start d-flex flex-column align-items-center my-3 mt-md-0">
+                  <h5 class="fw-bold w-50">Company</h5>
+                  <ul class="nav flex-column w-50">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li>
+                  </ul>
+                </div>
+  
+                <div class="col-md-3 col-6 px-0 text-start d-flex flex-column align-items-center my-3 mt-md-0">
+                  <h5 class="fw-bold w-50">More</h5>
+                  <ul class="nav flex-column w-50">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentation</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">License</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Changelog</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="d-flex flex-column align-items-center justify-content-center py-4 my-4">
+              <div class="bg-primary rounded-circle p-1 mb-3 d-flex align-items-center justify-content-center" style="width:2.5rem; height:2.5rem">
+                <img id="heart" alt="btn" class="w-50">
+              </div>
+              <p class="text-gray">copyright © 2019, Crafted with love.</p>
+            </div>
+        </footer>
     </div>
   </body>
 </html>

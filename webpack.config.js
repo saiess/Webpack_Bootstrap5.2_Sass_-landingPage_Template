@@ -21,8 +21,8 @@ module.exports = {
     },
     port: 3000,
     open: true,
-    compress: true,
     hot: true,
+    compress: true,
     historyApiFallback: true,
   },
   module: {
@@ -42,7 +42,11 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
       },
     ],

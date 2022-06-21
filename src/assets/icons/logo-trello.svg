@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.347" height="31.326" viewBox="0 0 31.347 31.326">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0052cc"/>
+      <stop offset="1" stop-color="#2684ff"/>
+    </linearGradient>
+  </defs>
+  <g id="logo-trello" transform="translate(-0.58 -0.07)">
+    <path id="Path_10" data-name="Path 10" d="M28.205.07H4.306A3.726,3.726,0,0,0,.58,3.791V27.655A3.726,3.726,0,0,0,4.306,31.4h23.9a3.726,3.726,0,0,0,3.721-3.741V3.791A3.726,3.726,0,0,0,28.205.07ZM14.1,22.633a1.245,1.245,0,0,1-1.255,1.24H7.621a1.24,1.24,0,0,1-1.235-1.24V7.091A1.24,1.24,0,0,1,7.621,5.85h5.223a1.245,1.245,0,0,1,1.24,1.24ZM26.151,15.5a1.241,1.241,0,0,1-1.255,1.24H19.673a1.246,1.246,0,0,1-1.24-1.24V7.091a1.245,1.245,0,0,1,1.24-1.24H24.9a1.24,1.24,0,0,1,1.235,1.24Z" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
