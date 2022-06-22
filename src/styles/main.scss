@@ -26,6 +26,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 * {
   font-family: 'HKGrotesk', sans-serif;
+  box-sizing: border-box;
 }
 
 .fs {
@@ -114,8 +115,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     @media screen and (max-width: 495px) {
     left: 6rem;
   }
-}
-
-img {
-  aspect-ratio: attr(width) / attr(height);
 }
