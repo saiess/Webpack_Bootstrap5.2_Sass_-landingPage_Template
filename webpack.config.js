@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,10 +9,11 @@ module.exports = {
     bundle: path.resolve(__dirname, 'src/index.js'),
   },
   output: {
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
     filename: '[name] [contenthash].js',
     clean: true,
-    assetModuleFilename: '[name] [ext]',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   devtool: 'source-map',
   devServer: {
@@ -43,17 +44,34 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 30 * 1024,
+          },
+        },
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif|webp)$/i,
-        type: 'asset/resource',
+        test: /\.(svg|png|jpg?g|gif|webp)$/i,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 30 * 1024,
+          },
+        },
       },
     ],
   },
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, 'src/assets/images'),
+      icons: path.resolve(__dirname, 'src/assets/icons'),
+    },
+  },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Landing Page',
+      title: 'Ehya',
       filename: 'index.html',
       template: 'src/template.html',
     }),

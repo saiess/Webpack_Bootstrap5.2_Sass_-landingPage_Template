@@ -17,8 +17,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @font-face {
   font-family: $font-family;
   src: url($font-file + '-Regular.otf'), url($font-file + '-Bold.otf'),
-    url($font-file + '-BoldItalic.otf'), url($font-file + '-Italic.otf'),
-    url($font-file + '-SemiBold.otf'), url($font-file + '-SemiBoldItalic.otf');
+    url($font-file + '-Italic.otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -41,7 +40,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   width: 100%;
 }
 
-.img-container{
+.img-container {
   height: 17rem !important;
   @media screen and (max-width: 768px) {
     height: auto !important;
@@ -49,7 +48,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 .shape {
-  background-image: url(../assets/images/shape-1.svg);
+  background-image: url(~images/shape-1.svg);
   max-width: 16rem;
   background-size: cover;
   margin-top: 5rem;
@@ -58,11 +57,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   @media screen and (max-width: 960px) {
     width: 90%;
   }
-    @media screen and (max-width: 768px) {
-      margin-top: 0rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 0rem;
   }
-      @media screen and (max-width: 767px) {
-      margin-top: -9rem;
+  @media screen and (max-width: 767px) {
+    margin-top: -9rem;
   }
 }
 
@@ -92,27 +91,27 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   justify-items: end;
 }
 
-.divRounded{
+.divRounded {
   border-radius: 20px;
   @media screen and (max-width: 768px) {
     border-radius: 0px;
   }
 }
 
-.gridContainer{
+.gridContainer {
   @media screen and (max-width: 767px) {
-      margin-top:16rem;
+    margin-top: 16rem;
     position: relative;
   }
 }
 
-.moveUp{
+.moveUp {
   @media screen and (max-width: 767px) {
     position: absolute;
     top: -14rem;
     left: 9rem;
   }
-    @media screen and (max-width: 495px) {
+  @media screen and (max-width: 495px) {
     left: 6rem;
   }
 }
