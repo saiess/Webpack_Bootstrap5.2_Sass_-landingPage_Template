@@ -6,8 +6,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 let mode = "development";
+let devtool= "source-map";
 if (process.env.NODE_ENV === "production") {
   mode = "production";
+  devtool = false;
 }
 
 module.exports = {
@@ -27,7 +29,7 @@ module.exports = {
     clean: true,
     assetModuleFilename: 'images/[hash][ext][query]',
   },
-  devtool: 'source-map',
+  devtool: devtool,
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
