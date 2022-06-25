@@ -1,8 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const BrotliPlugin = require('brotli-webpack-plugin');
+require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -99,13 +98,6 @@ module.exports = {
       title: 'Ehya',
       filename: 'index.html',
       template: 'src/template.html',
-    }),
-    new BrotliPlugin({
-      asset: '[path].br[query]',
-      test: /\.(js|scss)$/,
-      threshold: 10240,
-      minRatio: 0.8,
-      deleteOriginalAssets: true,
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
