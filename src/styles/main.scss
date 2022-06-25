@@ -13,8 +13,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import '~bootstrap/scss/bootstrap';
 @font-face {
   font-family: $font-family;
-  src: url($font-file + '-Regular.otf'), url($font-file + '-Bold.otf'),
-    url($font-file + '-Italic.otf');
+  src: url($font-file + '-Regular.otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
