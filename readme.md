@@ -12,12 +12,13 @@ Includes the following features...
 - Caching
 - Bootstrap 5.2
 - postcss-loader
+- brotli plugin
 
 ## Usage
 
 (Port 3000)
 ```
-  yarn dev
+yarn dev
 ```
 
 ## Build for production

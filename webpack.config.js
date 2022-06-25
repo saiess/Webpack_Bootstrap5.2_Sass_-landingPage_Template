@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
 
 
 let mode = "development";
@@ -15,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 module.exports = {
   mode: mode,
   performance: {
-    hints: false,
+    hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
@@ -88,6 +89,12 @@ module.exports = {
       title: 'Ehya',
       filename: 'index.html',
       template: 'src/template.html',
+    }),
+        new BrotliPlugin({
+      asset: '[path].br[query]',
+      test: /\.(js|css|html|scss|svg|webp)$/,
+      threshold: 10240,
+      minRatio: 0.8
     }),
     new BundleAnalyzerPlugin(),
   ],
