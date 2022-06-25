@@ -1,4 +1,5 @@
 @import './variables';
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css');
 $custom-colors: (
   'gray': $gray,
   'lightGray': $lightGray,
@@ -11,15 +12,8 @@ $custom-colors: (
 @import '~bootstrap/scss/mixins';
 $theme-colors: map-merge($theme-colors, $custom-colors);
 @import '~bootstrap/scss/bootstrap';
-@font-face {
-  font-family: $font-family;
-  src: url($font-file + '-Regular.otf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 * {
-  font-family: 'HKGrotesk', sans-serif;
+  font-family: 'HK Grotesk', sans-serif;
   box-sizing: border-box;
 }
 .fs {
@@ -38,7 +32,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 .shape {
-  background-image: url(https://user-images.githubusercontent.com/27149874/175770931-85a9d0b9-02c3-4c77-88a9-a20e2212e5c0.svg);
+  background-image: url(~images/shape-1.svg);
   max-width: 16rem;
   background-size: cover;
   margin-top: 5rem;

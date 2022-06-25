@@ -5,12 +5,12 @@ const BundleAnalyzerPlugin =
 const BrotliPlugin = require('brotli-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
-let mode = "development";
-let devtool= "source-map";
-if (process.env.NODE_ENV === "production") {
-  mode = "production";
+let mode = 'development';
+let devtool = 'source-map';
+if (process.env.NODE_ENV === 'production') {
+  mode = 'production';
   devtool = false;
 }
 
@@ -79,6 +79,7 @@ module.exports = {
   resolve: {
     alias: {
       icons: path.resolve(__dirname, 'src/assets/icons'),
+      images: path.resolve(__dirname, 'src/assets/images'),
     },
   },
   optimization: {
@@ -101,10 +102,14 @@ module.exports = {
     }),
     new BrotliPlugin({
       asset: '[path].br[query]',
-      test: /\.(js|css|scss|html)$/,
+      test: /\.(js|scss)$/,
       threshold: 10240,
       minRatio: 0.8,
       deleteOriginalAssets: true,
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
     new BundleAnalyzerPlugin(),
     new LodashModuleReplacementPlugin(),

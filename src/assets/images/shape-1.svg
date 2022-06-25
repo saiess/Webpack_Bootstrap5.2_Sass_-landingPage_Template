@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="430" viewBox="0 0 290 430">
+  <g id="Group_5" data-name="Group 5" transform="translate(-242 -2744)">
+    <g id="Outline" transform="translate(242 2744)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3">
+      <rect width="290" height="430" rx="145" stroke="none"/>
+      <rect x="1.5" y="1.5" width="287" height="427" rx="143.5" fill="none"/>
+    </g>
+    <path id="Path" d="M0,0C79.529,0,143.5,64.419,143.5,144.5v33" transform="translate(387 2745.5)" fill="none" stroke="#faad13" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>
