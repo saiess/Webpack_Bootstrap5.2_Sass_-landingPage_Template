@@ -2,8 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BrotliPlugin = require('brotli-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const BrotliPlugin = require('brotli-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 
@@ -99,12 +99,13 @@ module.exports = {
       filename: 'index.html',
       template: 'src/template.html',
     }),
-    // new BrotliPlugin({
-    //   asset: '[path].br[query]',
-    //   test: /\.(js|css|scss|html|webp|otf|svg)$/,
-    //   threshold: 10240,
-    //   minRatio: 0.8,
-    // }),
+    new BrotliPlugin({
+      asset: '[path].br[query]',
+      test: /\.(js|css|scss|html)$/,
+      threshold: 10240,
+      minRatio: 0.8,
+      deleteOriginalAssets: true,
+    }),
     new BundleAnalyzerPlugin(),
     new LodashModuleReplacementPlugin(),
   ],
