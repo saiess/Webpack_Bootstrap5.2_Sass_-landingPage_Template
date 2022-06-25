@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const BrotliPlugin = require('brotli-webpack-plugin');
+// const BrotliPlugin = require('brotli-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 
@@ -78,7 +78,6 @@ module.exports = {
   },
   resolve: {
     alias: {
-      images: path.resolve(__dirname, 'src/assets/images'),
       icons: path.resolve(__dirname, 'src/assets/icons'),
     },
   },
@@ -100,13 +99,12 @@ module.exports = {
       filename: 'index.html',
       template: 'src/template.html',
     }),
-    new BrotliPlugin({
-      asset: '[path].br[query]',
-      test: /\.(js|css|scss|html|webp|otf|svg)$/,
-      threshold: 10240,
-      minRatio: 0.8,
-      deleteOriginalAssets: true,
-    }),
+    // new BrotliPlugin({
+    //   asset: '[path].br[query]',
+    //   test: /\.(js|css|scss|html|webp|otf|svg)$/,
+    //   threshold: 10240,
+    //   minRatio: 0.8,
+    // }),
     new BundleAnalyzerPlugin(),
     new LodashModuleReplacementPlugin(),
   ],
