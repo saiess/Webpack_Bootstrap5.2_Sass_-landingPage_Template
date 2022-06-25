@@ -3,8 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CompressionPlugin = require('brotli-webpack-plugin');
-const zlib = require('zlib');
+const BrotliPlugin = require('brotli-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 
 let mode = "development";
@@ -30,6 +30,7 @@ module.exports = {
     filename: '[name] [contenthash].js',
     clean: true,
     assetModuleFilename: 'images/[hash][ext][query]',
+    chunkFilename: '[chunks].js',
   },
   devtool: devtool,
   devServer: {
@@ -53,9 +54,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          // options: {
-          //   presets: ['@babel/preset-env'],
-          // },
         },
       },
       {
@@ -84,6 +82,17 @@ module.exports = {
       icons: path.resolve(__dirname, 'src/assets/icons'),
     },
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/, ///< put all used node_modules modules in this chunk
+          name: 'vendor', ///< name of bundle
+          chunks: 'all', ///< type of code to put in this bundle
+        },
+      },
+    },
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -91,19 +100,13 @@ module.exports = {
       filename: 'index.html',
       template: 'src/template.html',
     }),
-    new CompressionPlugin({
-      filename: '[path][base].br',
-      algorithm: 'brotliCompress',
-      test: /\.(js|css|html|svg|webp|otf)$/,
-      compressionOptions: {
-        params: {
-          [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
-        },
-      },
+    new BrotliPlugin({
+      asset: '[path].br[query]',
+      test: /\.(js|css|scss|html|webp|otf|svg)$/,
       threshold: 10240,
       minRatio: 0.8,
-      deleteOriginalAssets: true,
     }),
     new BundleAnalyzerPlugin(),
+    new LodashModuleReplacementPlugin(),
   ],
 };

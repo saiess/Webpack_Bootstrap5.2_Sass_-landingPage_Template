@@ -12,10 +12,10 @@
     "clean": "rm rf dist"
   },
   "dependencies": {
-    "@gfx/zopfli": "^1.0.15",
     "@popperjs/core": "^2.11.5",
     "bootstrap": "5.2.0-beta1",
-    "brotli-webpack-plugin": "^1.1.0"
+    "brotli-webpack-plugin": "^1.1.0",
+    "lodash-webpack-plugin": "^0.11.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",

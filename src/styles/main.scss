@@ -6,14 +6,11 @@ $custom-colors: (
   'teal': $teal,
   'lightGreen': $lightGreen,
 );
-
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
-
 $theme-colors: map-merge($theme-colors, $custom-colors);
 @import '~bootstrap/scss/bootstrap';
-
 @font-face {
   font-family: $font-family;
   src: url($font-file + '-Regular.otf'), url($font-file + '-Bold.otf'),
@@ -22,31 +19,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   font-style: normal;
   font-display: swap;
 }
-
 * {
   font-family: 'HKGrotesk', sans-serif;
   box-sizing: border-box;
 }
-
 .fs {
   font-size: 4rem;
 }
-
 .spacing {
   letter-spacing: 2px;
 }
-
 .imgSlide {
   width: 100%;
 }
-
 .img-container {
   height: 17rem !important;
   @media screen and (max-width: 768px) {
     height: auto !important;
   }
 }
-
 .shape {
   background-image: url(~images/shape-1.svg);
   max-width: 16rem;
@@ -64,47 +55,39 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     margin-top: -9rem;
   }
 }
-
 .wrapper {
   width: 40%;
 }
-
 .btnSlide {
   width: 3.5rem;
   height: 3.5rem;
 }
-
 .buttondots {
   width: 0.1rem;
   height: 0.7rem;
   background-color: rgba(192, 192, 192, 0.41);
   border-radius: 100%;
 }
-
 .makeGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-
 .makeGrid .gridchild:nth-child(1) {
   justify-items: end;
 }
-
 .divRounded {
   border-radius: 20px;
   @media screen and (max-width: 768px) {
     border-radius: 0px;
   }
 }
-
 .gridContainer {
   @media screen and (max-width: 767px) {
     margin-top: 16rem;
     position: relative;
   }
 }
-
 .moveUp {
   @media screen and (max-width: 767px) {
     position: absolute;

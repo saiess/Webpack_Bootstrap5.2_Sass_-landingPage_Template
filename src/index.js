@@ -1,8 +1,5 @@
 import './styles/main.scss';
-import { Tooltip, Toast, Popover } from 'bootstrap';
-
-
-// * images **
+import {} from 'bootstrap';
 import Hero from './assets/images/illustration-hero.webp';
 import Dots from './assets/images/dots.svg';
 import illustration1 from './assets/images/illustration-1.webp';
@@ -41,7 +38,6 @@ import Notion from './assets/icons/logo-notion.svg';
 import Chevron from './assets/icons/icon-chevron-right.svg';
 import ChevronLeft from './assets/icons/chevron-left.svg';
 import Toggle from './assets/icons/Toggle.svg';
-
 const WebLogo = document.getElementById('logo');
 const logoFooter = document.getElementById('logoFooter');
 const HeroImg = document.getElementById('hero');
@@ -81,7 +77,6 @@ const NotionLogo = document.getElementById('notion');
 const ChevronLogo = document.getElementById('chevron');
 const ChevronLeftLogo = document.getElementById('chevronleft');
 const ToggleLogo = document.getElementById('toggle');
-
 WebLogo.src = Logo;
 logoFooter.src = Logo;
 HeroImg.src = Hero;
