@@ -105,6 +105,7 @@ module.exports = {
       test: /\.(js|css|scss|html|webp|otf|svg)$/,
       threshold: 10240,
       minRatio: 0.8,
+      deleteOriginalAssets: true,
     }),
     new BundleAnalyzerPlugin(),
     new LodashModuleReplacementPlugin(),
