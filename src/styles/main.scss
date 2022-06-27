@@ -69,6 +69,35 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .makeGrid .gridchild:nth-child(1) {
   justify-items: end;
 }
+
+.wrapcard {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: space-between;
+
+  .crd {
+    width: 20rem !important;
+    height: 20rem !important;
+    margin-left: 1rem;
+    padding-top: 10px;
+    text-align: start;
+    border-radius: 15px;
+    @media screen and (max-width: 768px) {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+  }
+}
+
+.wrapcard::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapcard {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .divRounded {
   border-radius: 20px;
   @media screen and (max-width: 768px) {
