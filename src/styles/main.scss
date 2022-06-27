@@ -75,7 +75,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   flex-wrap: nowrap;
   overflow-x: scroll;
   justify-content: space-between;
-
   .crd {
     width: 20rem !important;
     height: 20rem !important;
